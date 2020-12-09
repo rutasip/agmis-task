@@ -7,13 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductDescription from "./components/ProductDescription";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      // showFetchButton: true,
-    };
-  }
-
   render() {
     return (
       <Provider store={store}>
@@ -22,9 +15,6 @@ class App extends React.Component {
             <main>
               <div className="content">
                 <div className="main">
-                  {/* {this.state.showFetchButton && (
-                  <button onClick={this.fetchProducts}>Load Products</button>
-                )} */}
                   <Switch>
                     <Route
                       path="/product-description/:id"

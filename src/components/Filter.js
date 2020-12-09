@@ -10,9 +10,7 @@ import "./Filter.css";
 
 class Filter extends Component {
   render() {
-    return !this.props.filteredProducts ? (
-      <div>Loading...</div>
-    ) : (
+    return !this.props.filteredProducts ? null : (
       <div className="filter">
         <div className="filter-result">
           {this.props.filteredProducts.length} Product(s)
@@ -44,9 +42,7 @@ class Filter extends Component {
               )
             }
           >
-            <option value="" selected>
-              All
-            </option>
+            <option value="">All</option>
             <option value="9">9</option>
             <option value="23">23</option>
             <option value="56">56</option>
@@ -62,9 +58,7 @@ class Filter extends Component {
               )
             }
           >
-            <option value="" selected>
-              All
-            </option>
+            <option value="">All</option>
             <option value="23">23</option>
             <option value="56">56</option>
             <option value="114">114</option>
