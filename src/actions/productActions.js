@@ -5,6 +5,7 @@ import { FILTER_PRODUCTS_BY_KEYWORD } from "../types";
 import { RESET_FILTERS } from "../types";
 
 export const fetchProducts = () => async (dispatch) => {
+  // Fake data from https://fakestoreapi.com/
   const res = await fetch(`data.json`);
   const data = await res.json();
   dispatch({
