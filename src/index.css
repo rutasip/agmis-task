@@ -24,8 +24,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #f0c040;
+p {
+  margin: 0;
 }
 
 .grid-container {
